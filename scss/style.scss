@@ -33,7 +33,14 @@ a {
   color: $font-color;
   margin-bottom: 0;
 }
-
+.tab-xl-4 {
+  flex: 0 0 37.45%;
+  max-width: 37.45%;
+}
+.tab-xl-8 {
+  flex: 0 0 calc(100% - 37.45%);
+  max-width: calc(100% - 37.45%);
+}
 .main_contaiter {
   display: flex;
   width: 100%;
@@ -172,3 +179,5 @@ a {
 @import './components/service.scss';
 @import './components/risks.scss';
 @import './components/form.scss';
+@import './components/data.scss';
+@import './components/command.scss';

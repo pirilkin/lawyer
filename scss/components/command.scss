@@ -1,0 +1,31 @@
+.command{
+    padding: 100px 0;
+    .container-custom{
+        max-width: 1550px;
+    }
+    &-slider{
+        position: relative;
+        padding: 0 116px;
+    }
+    &-arrows{
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        &__prev{
+            left: 0;
+        }
+        &__next{
+            right: 0;
+            
+        }
+    }
+    &-pagination{
+        // position: absolute;
+        // bottom: 0;
+    }
+}
