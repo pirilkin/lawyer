@@ -18,6 +18,7 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0rem;
   font-weight: 400;
+  // background: url(../images/header-bg.png);
 }
 dl,
 ol,
@@ -172,6 +173,26 @@ a {
   }
 }
 
+.swiper-arrow__next,
+.swiper-arrow__prev,
+.command-arrows__prev,
+.command-arrows__next{
+  user-select: none;
+}
+section{
+  padding: 50px 0;
+}
+.fancybox{
+  &-zoom,
+  &-link{
+    &:active,
+    &:focus,
+    &:hover{
+      outline: none;
+      border: none;
+    }
+  }
+}
 @import './components/header.scss';
 @import './components/limit.scss';
 @import './components/youself.scss';
@@ -181,3 +202,8 @@ a {
 @import './components/form.scss';
 @import './components/data.scss';
 @import './components/command.scss';
+@import './components/benefit.scss';
+@import './components/warranty.scss';
+@import './components/scheme.scss';
+@import './components/answers.scss';
+@import './components/visit.scss';

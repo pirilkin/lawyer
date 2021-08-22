@@ -1,6 +1,8 @@
 .respon{
-    padding: 160px 0 0;
-    position: relative;
+    // padding: 160px 0 0;
+    .container-custom{
+        position: relative;
+    }
     &-title{
         margin-bottom: 60px;
     }
@@ -8,7 +10,7 @@
         &__main{
             position: absolute;
             left: 0;
-            transform: translateX(0%);
+            transform: translateX(-50%);
             &::after{
                 content: url('../images/respon-2.png');
                 position: absolute;

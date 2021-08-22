@@ -35,6 +35,12 @@
             right: 102px;
             transform: translate(1px, -49%);
         }
+        &-bottom{
+            right: -65px;
+            &::before{
+                right: 78px;
+            }
+        }
         img{
             max-width: 100%;
         }

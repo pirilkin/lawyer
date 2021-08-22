@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     let serviceSlider = new Swiper('.service-slider', {
         // arrows
         // navigation: {
@@ -24,34 +23,20 @@ $(document).ready(function () {
             pageUpDown: true,
         },
         slidesPerView: 1,
-        //отключение слайдера если слайдов меньше чем надо
-        // watchOverflow: true,
         spaceBetween: 20,
         //активный слайд по центру страницы
         centeredSlides: true,
-        //стартовый слайд начианется с 0
-        // initialSlide: 1,
-        //количество рядов
-        // slidesPerColumn: 1,
-        //бесконечно (не работает если количество рядоров больше 1-го)
         loop: true,
-        // передача управления
-        // controller: {
-        //     control: textSlider
-        // },
-
     });
-    
-    
     let commandSlider = new Swiper('.command-slider', {
         // arrows
-        // navigation: {
-        //     nextEl: '.swiper-btn-next',//можно их поменять (поставить любой класс) или настроить стандарный
-        //     prevEl: '.swiper-btn-prev',
-        // },
+        navigation: {
+            nextEl: '.command-arrows__next',//можно их поменять (поставить любой класс) или настроить стандарный
+            prevEl: '.command-arrows__prev',
+        },
         // effect: 'fade',
         pagination: {
-            el: '.swiper-pagination',
+            el: '.command-pagination',
             clickable: true,
             // dynamicBullets: true,
         },
@@ -67,21 +52,58 @@ $(document).ready(function () {
             pageUpDown: true,
         },
         slidesPerView: 4,
-        //отключение слайдера если слайдов меньше чем надо
-        // watchOverflow: true,
         spaceBetween: 32,
-        //активный слайд по центру страницы
-        // centeredSlides: true,
-        //стартовый слайд начианется с 0
-        // initialSlide: 1,
-        //количество рядов
-        // slidesPerColumn: 1,
         //бесконечно (не работает если количество рядоров больше 1-го)
         loop: true,
-        // передача управления
-        // controller: {
-        //     control: textSlider
-        // },
-
     });
+    $("a.fancybox-link").fancybox();
+
+    // if($(this).hasClass('collapsed')){
+    //     console.log(this);
+    //     $('.answers-card__header').css('background', 'grey');
+    // }
+    // else{
+    //     console.log('blue');
+    // }
+    // $('.answers-card .show').parent().css('background', 'black');
+
+
+    // $('.answers-card .btn-link').click(function(){
+    //    if($('.collapse').hasClass('show')){
+    //         $(this).toggleClass('red');
+    //         console.log('add');
+    //     }
+    //     else{
+    //         console.log('remove');
+    //         $(this).removeClass('red');
+    //     }
+    //     // $('.collapse .show').parent().css('background', 'black');
+    // })
+    // $('.answers-card .btn-link').click(function () {
+    //     var target = $(this).attr("aria-expanded");
+    //     if($(target) == 'true'){
+    //         console.log(target);
+    //         $(this).css('background', 'black');
+    //     }
+    //     else{
+    //         $(this).css('background', 'transparent');
+            
+    //     }
+    //     // if ($(".btn-block").filter("[aria-expanded=true]")) {
+    //         // $(".btn-block").filter("[aria-expanded=true]").css('background', 'black');
+    //         // $(".btn-block").filter("[aria-expanded=false]").css('background', 'transparent');
+    //     // }
+    // });
+    // $('.answers-card .btn-link').click(function () {
+    //     console.log($(this).siblings());
+    //     if($(this).siblings().hasClass('.show')) { 
+    //         console.log('link');
+    //         $(this).parent().addClass('red');
+    //         // Element 'a' has no href
+    //     }
+    //     else{
+    //         console.log('none');
+    //     }
+    // })
+
 });
