@@ -4,8 +4,14 @@
         margin-bottom: 35px;
     }
 
+    &-container {
+        &__title {
+            padding-left: 110px;
+        }
+    }
+
     &-accordion {
-        width: 1110px;
+        width: 1150px;
         margin: 0 auto;
         transition: 1s;
     }
@@ -16,6 +22,7 @@
     }
 
     &-card {
+        // padding-left: 20px;
         padding-right: 20px;
         background: transparent;
         border: none;
@@ -63,6 +70,7 @@
                 font-weight: bold;
                 color: $green-light;
             }
+
             .collapsed {
                 color: $purple;
             }
@@ -81,6 +89,7 @@
             }
         }
     }
+
     .red {
         background: red;
     }

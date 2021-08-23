@@ -748,7 +748,7 @@ section {
 }
 
 .header-main {
-  background: url("../images/header-bg.png") center center no-repeat;
+  background: url("../images/header-bg.webp") center center no-repeat;
   background-size: cover;
   overflow: hidden;
   padding-bottom: 82px;
@@ -994,7 +994,7 @@ section {
 }
 
 .respon-img__main::after {
-  content: url("../images/respon-2.png");
+  content: url("../images/respon-2.webp");
   position: absolute;
   bottom: -10px;
   right: -80px;
@@ -1182,7 +1182,7 @@ section {
   content: ' ';
   height: 101%;
   width: 30px;
-  background-image: url("/images/service-arrow.png");
+  background-image: url("./images/service-arrow.webp");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -2146,8 +2146,12 @@ section {
   margin-bottom: 35px;
 }
 
+.answers-container__title {
+  padding-left: 110px;
+}
+
 .answers-accordion {
-  width: 1110px;
+  width: 1150px;
   margin: 0 auto;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -2261,6 +2265,22 @@ section {
 
 .visit-title {
   margin-bottom: 15px;
+  position: relative;
+}
+
+.visit-title::after {
+  content: url("../images/visit-arrow.svg");
+  position: absolute;
+  top: 10px;
+  right: -45px;
+  -webkit-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  z-index: 99;
+}
+
+.visit .col-xl-10 {
+  margin: 0 auto;
 }
 
 .visit-subtitle {
@@ -2355,6 +2375,156 @@ section {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.footer {
+  margin-bottom: 21px;
+}
+
+.footer .container-custom {
+  padding: 40px 60px 5px 80px;
+  background: #E2EBFF;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.footer-main__logo {
+  max-width: 85px;
+  margin-right: 17px;
+}
+
+.footer-main__logo img {
+  max-width: 100%;
+}
+
+.footer-main__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+}
+
+.footer-main__one_text {
+  padding-top: 14px;
+}
+
+.footer-main__two {
+  padding-top: 14px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-main__two_phone {
+  width: 100%;
+  font-size: 36px;
+  line-height: 58px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.footer-main__question {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.footer-main__question::after {
+  content: url("../images/footer-arrow.svg");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, 0%);
+  -ms-transform: translate(50%, 0%);
+  transform: translate(50%, 0%);
+}
+
+.footer-main__copyright {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-main__copyright a {
+  text-decoration: underline;
+}
+
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.footer-address__item {
+  margin-bottom: 16px;
+}
+
+.footer-address__link {
+  color: #2F387B;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.footer-address__map {
+  height: 127px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.footer-list__item {
+  border-radius: 50%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  -webkit-box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
+  box-shadow: 0px 10px 10px rgba(40, 141, 47, 0.5);
+  margin-right: 10px;
+}
+
+.footer-list__item img {
+  width: 30px;
+}
+
+.footer-iframe {
+  width: 470px;
+  height: 217px;
 }
 
 @media (min-width: 576px) {
